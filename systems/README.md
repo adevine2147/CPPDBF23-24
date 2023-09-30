@@ -9,3 +9,5 @@
 ### Meeting Report Format
 [Meeting Report Format](https://docs.google.com/document/d/1W8hIXivPjW4PSrQ7Es8DGwEqDSCHRhApgGQMQkIKseE/edit?usp=sharing](https://docs.google.com/document/d/1W8hIXivPjW4PSrQ7Es8DGwEqDSCHRhApgGQMQkIKseE/edit?usp=sharing)https://docs.google.com/document/d/1W8hIXivPjW4PSrQ7Es8DGwEqDSCHRhApgGQMQkIKseE/edit?usp=sharing).
 
+### NOTES
+[Notes](notes_proposal.md)

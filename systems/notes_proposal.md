@@ -46,4 +46,30 @@ When grading these proposals, judges are likely looking for the following key fa
 
 - **Budget Management**: Judges may consider how well the teams have managed their budgets and secured funding for their project.
 
-In summary, the top three proposals for the AIAA Design/Build/Fly Competition have common elements related to clear objectives, structured approaches, technical details, sensitivity analysis, teamwork, and more. They excel in mission-focused design, mathematical modeling, and simulations. Judges are likely looking for innovation, technical competence, practicality, data-driven decision-making, and effective teamwork when evaluating these proposals.
+
+
+
+**Areas for Improvement (Common Across Proposals):**
+
+1.  **Subcomponent Design Schedule:** The proposals lack detailed schedules for subcomponent design. Providing comprehensive schedules for the design and development of individual components could strengthen all three proposals.
+    
+2.  **Optimization of Ground Mission Weight and Antenna Length:** The proposals could benefit from more detailed information about the teams' approaches to optimizing ground mission weight and antenna length. Offering specific strategies and calculations related to these parameters could enhance the proposals.
+
+
+3. Ground Mission: The proposal lacks information about the ground mission, including details about the weight to be loaded onto the aircraft. Providing a comprehensive plan for the ground mission would enhance the proposal.
+
+4. Payload Range: The proposed payload range of 1-20 pounds is considered unrealistic. Consider specifying a more reasonable payload range.
+
+5 Optimization and Trade Studies: The methods used for optimization and trade studies could be explained in more detail to provide greater transparency.
+
+6. Design Consistency: Ensure that the proposal maintains consistency between textual descriptions and graphical representations. For example, clarify whether the wing design is rectangular or tapered, and ensure that the number of fasteners aligns with competition rules.
+
+7. Weight, Drag, and Energy Estimation: Include discussions about weight, drag, and mission energy estimation methods. Provide a breakdown of expected empty weight or a goal empty weight.
+
+8. Wind Tunnel Testing: If wind tunnel testing is part of the plan, ensure it is discussed in the proposal, as it appears as a block in the schedule.
+
+9. Testing Plan Detail: Strengthen the description of the testing plan by providing more comprehensive details.
+
+10. Clarify and Correct Discrepancies: Address discrepancies between textual descriptions and visual representations, such as the wing design and fastener counts.
+
+11. Schedule for Prototype Manufacturing: Include a schedule for the manufacturing of the prototype, as it is a crucial aspect of the project.

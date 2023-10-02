@@ -4,13 +4,14 @@ from github import Github
 import sys
 
 
-repository_name = 'CPPDBF23-24'
+repository_name = 'https://github.com/adevine2147/CPPDBF23-24'
 
 # Define the GitHub token secret name
 github_token_secret_name = 'GH_PAT'
 
 # Get the GitHub token from the secret
-github_token = os.getenv(github_token_secret_name)
+#github_token = os.getenv(github_token_secret_name)
+github_token = "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"
 
 # Check if the token is available
 if github_token is None:

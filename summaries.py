@@ -4,14 +4,14 @@ from github import Github
 import sys
 
 
-repository_name = 'https://github.com/adevine2147/CPPDBF23-24'
+repository_name = 'CPPDBF23-24'
 
 # Define the GitHub token secret name
 github_token_secret_name = 'GH_PAT'
 
 # Get the GitHub token from the secret
 #github_token = os.getenv(github_token_secret_name)
-github_token = "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"
+github_token = "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"
 
 # Check if the token is available
 if github_token is None:
@@ -19,6 +19,7 @@ if github_token is None:
 
 # Initialize the GitHub API client with the token
 g = Github(github_token)
+
 repo = g.get_user().get_repo(repository_name)
 
 # Define the folder containing weekly update markdown files
@@ -26,7 +27,6 @@ folder_path = 'systems/updates'
 
 # List all directories in the folder
 directories = [directory for directory in repo.get_contents(folder_path, ref="main") if directory.type == 'dir']
-
 # Initialize a dictionary to store summaries by week number
 summaries_by_week = {}
 
@@ -37,10 +37,11 @@ combined_main_readme_summary = ""
 for directory in directories:
     # List all markdown files in the subdirectory
     files = repo.get_contents(directory.path, ref="main")
-    markdown_files = [file for file in files if file.name.endswith(".md")]
 
+    markdown_files = [file for file in files if file.name.endswith(".md")]
     # Determine the week number from the directory name
     week_match = re.match(r'^(\d+)_\w+$', directory.name)
+
     if week_match:
         week_number = int(week_match.group(1))
     else:
@@ -75,7 +76,8 @@ for directory in directories:
 
     # Append this week's summary to the combined main readme summary
     combined_main_readme_summary += f"\n## Week {week_number} Summary\n\n{combined_summary}"
-
+print(combined_main_readme_summary)
+"""
 # Get the existing content of the main readme.md file
 readme_file = repo.get_contents("readme.md", ref="main")
 existing_readme_content = readme_file.decoded_content.decode("utf-8")
@@ -85,3 +87,4 @@ updated_readme_content = existing_readme_content + combined_main_readme_summary
 
 # Update the main readme.md file with the combined summaries
 repo.update_file("readme.md", "Update the README with the latest weekly update", updated_readme_content, readme_file.sha, branch="main")
+"""

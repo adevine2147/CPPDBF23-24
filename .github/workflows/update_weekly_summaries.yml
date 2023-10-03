@@ -2,7 +2,7 @@ name: Update Weekly Summaries
 
 on:
   schedule:
-    - cron: '*/4 * * * *'  # Run every Sunday at midnight UTC
+    - cron: '*/5 * * * *'  # Run every Sunday at midnight UTC
 
 jobs:
   update_summaries:

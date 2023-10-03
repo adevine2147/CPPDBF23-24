@@ -73,8 +73,9 @@ for directory in directories:
 new_main_readme_summary = (f"# Latest Week Summary (Week {latest_week_number}):\n{latest_week_summary}")
 
 # Get the existing content of the main readme.md file
-readme_file = repo.get_contents("tutorial.md", ref="main")
-tutorial_readme = readme_file.decoded_content.decode("utf-8")
+tutorial_file = repo.get_contents("tutorial.md", ref="main")
+tutorial_readme = tutorial_file.decoded_content.decode("utf-8")
+readme_file = repo.get_contents("README.md", ref="main")
 
 # Combine the existing content and the new summaries
 updated_readme_content = new_main_readme_summary + tutorial_readme

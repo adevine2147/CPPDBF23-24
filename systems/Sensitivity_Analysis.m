@@ -1,7 +1,7 @@
 
 scale = linspace(0.5,1.5);
-max2 = 5/40;
-max3 = 8*20/75;
+max2 = 8/120;
+max3 = 5*30/75;
 
 %What variables should we change?
 %velocity (ft/s), total payload capacity (lbs), battery capacity (Wh)
@@ -18,7 +18,7 @@ payload_weights = (zeros(1,100) + payload_weight).*scale;
 velocity = 61;
 velocities = (zeros(1,100) + velocity).*scale;
 
-max_air_time = 600; %10 minutes on a single battery probably...
+max_air_time = 300; %5 min max for all missions
 turn180 = 7; %7 seconds average turn with payload
 turn360 = 16.25; %16.35 seconds average 360 with payload
 lap_time = 2*turn180 + turn360 + 2000/velocity;
@@ -28,11 +28,9 @@ laps = floor(max_air_time/lap_time);
 passenger = 25;
 passengers = (zeros(1,100) + passenger).*scale;
 
-% BASELINE_SCORE = 1 + ...
-%                  1 + (payload_weight/(3*lap_time))/max2 + ...
-%                  2 + (laps*passengers/100)/max3;
-BASELINE_SCORE = 5.18; 
-%also equivalent to 5.1818
+BASELINE_SCORE = 1 + ...
+                 1 + (payload_weight/(3*lap_time))/max2 + ...
+                 2 + (laps*passenger/100)/max3;
 
 %doesn't go through zero cause of battery capacity i think, maybe the -1\
 
@@ -43,7 +41,7 @@ for i=1:100
     batt_capacities(i)
     M3 = 2 + (laps*passenger/batt_capacities(i))/max3
     total_score = M1 + M2 + M3;
-    batt_scores(i) = 100*(total_score/BASELINE_SCORE -1.1);
+    batt_scores(i) = 100*(total_score/BASELINE_SCORE -1.05);
 end
 
 payload_scores = zeros(1,100);
@@ -68,10 +66,9 @@ for i=1:100
     velocity_scores(i) = 100*(total_score/BASELINE_SCORE -1);
 end
 
-%resetting lap time, laps and baseline score
-lap_time = 2*turn180 + turn360 + 2000/velocity;
-laps = floor(max_air_time/lap_time);
-BASELINE_SCORE = 5.18;
+BASELINE_SCORE = 1 + ...
+                 1 + (payload_weight/(3*lap_time))/max2 + ...
+                 2 + (laps*passenger/100)/max3;
 
 passenger_scores = zeros(1,100);
 for i=1:100
@@ -90,7 +87,7 @@ plot(scale, payload_scores)
 hold on
 plot(scale, batt_scores)
 grid on
-xlabel('multiplier * attribute') 
+xlabel('attribute multiplier') 
 ylabel('%change in flyoff score') 
 legend({'passengers','velocity','total payload','battery'},'Location','northeast')
 

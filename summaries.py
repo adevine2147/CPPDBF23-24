@@ -5,22 +5,21 @@ from github import Auth
 import sys
 
 repository_name = 'adevine2147/CPPDBF23-24'
-
 # Define the GitHub token secret name
 github_token_secret_name = 'GH_PAT'
 
-# Get the GitHub token from the secret
-#github_token = os.getenv(github_token_secret_name)
+# Get the GitHub token from the environment variable
+github_token = os.getenv(github_token_secret_name)
 
-# Authentication is defined via github.Auth
-auth = Auth.Token("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")
+# Check if the token is available in the environment
+if github_token is None:
+    raise ValueError(f"GitHub token not found in environment variable: {github_token_secret_name}")
 
 # Public Web Github
-g = Github(auth=auth)
+g = Github(github_token)
 
 # Initialize the GitHub API client with the token
 repo = g.get_repo(repository_name)
-print(repo)
 
 # Define the folder containing weekly update markdown files
 folder_path = 'systems/updates'

@@ -17,9 +17,17 @@ jobs:
         with:
           python-version: 3.x
 
+      - name: Create and Activate Virtual Environment
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
       - name: Run Python Script
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          pip install -r requirements.txt
           python summaries.py

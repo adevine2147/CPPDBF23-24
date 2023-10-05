@@ -179,6 +179,15 @@ Additional Comments:
 
 Due October 6th continue working on the proposal with new information of each sub-team.
 Additional Comments:
+
+| Subteam | Total | Spendings (This week) | Remaining |
+| --- | --- | --- | --- |
+| Aerodynamics Team | $2000 | $0 | $2000 |
+| Structures Team (Wed) | $2000 | $0 | $2000 |
+| Structures Team (Fri) | $2000 | $0 | $2000 |
+| Payload Team | $8000 | $0 | $8000 |
+| Systems Team | $2000 | $0 | $2000 |
+
 # CPP DBF 23 - 24
 
   

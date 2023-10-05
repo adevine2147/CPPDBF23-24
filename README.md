@@ -178,7 +178,9 @@ Additional Comments:
 
 
 Due October 6th continue working on the proposal with new information of each sub-team.
-Additional Comments:| Subteam | Total | Spendings (This week) | Remaining |
+Additional Comments:
+
+| Subteam | Total | Spendings (This week) | Remaining |
 | --- | --- | --- | --- |
 | Aerodynamics Team | $2000 | $0 | $2000 |
 | Structures Team (Wed) | $2000 | $0 | $2000 |

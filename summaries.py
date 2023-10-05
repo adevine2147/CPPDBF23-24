@@ -1,22 +1,15 @@
 import os
 import re
 from github import Github
-from github import Auth
-import sys
 
 repository_name = 'adevine2147/CPPDBF23-24'
 # Define the GitHub token secret name
-github_token_secret_name = 'GH_PAT'
+# Get the GitHub PAT from the environment variable
+github_token = os.getenv("GH_PAT")
 
-# Get the GitHub token from the environment variable
-github_token = os.getenv(github_token_secret_name)
-
-# Check if the token is available in the environment
-if github_token is None:
-    raise ValueError(f"GitHub token not found in environment variable: {github_token_secret_name}")
-
-# Public Web Github
+# Create a GitHub API client using the token
 g = Github(github_token)
+
 
 # Initialize the GitHub API client with the token
 repo = g.get_repo(repository_name)
@@ -36,6 +29,18 @@ summaries_by_week = {}
 combined_main_readme_summary = ""
 latest_week_number = 0  # Initialize with a default value
 latest_week_summary = ""  # Initialize with an empty string
+
+# Initialize a dictionary to store subteam budgets
+subteam_budgets = {
+    "Aerodynamics Team": 2000,
+    "Structures Team (Wed)": 2000,
+    "Structures Team (Fri)": 2000,
+    "Payload Team": 8000,
+    "Systems(Traveling) Team": 2000,
+}
+
+# Initialize a dictionary to store subteam spendings
+subteam_spendings = {}
 
 for directory in directories:
     # List all markdown files in the subdirectory
@@ -61,6 +66,13 @@ for directory in directories:
                 summary_content = content[summary_start + len(summary_marker):].strip()
                 week_summaries.append(summary_content)
 
+            # Extract the spending information if it exists
+            spending_match = re.search(r'Costs:\s*\$([\d.]+)', content)
+            if spending_match:
+                subteam_name = content.split('\n')[0].strip()  # Get the first line which contains the subteam name
+                subteam_spending = float(spending_match.group(1))
+                subteam_spendings[subteam_name] = subteam_spendings.get(subteam_name, 0) + subteam_spending
+
         # Combine the extracted summaries for this week into a single string
         combined_summary = '\n\n'.join(week_summaries)
 
@@ -69,16 +81,25 @@ for directory in directories:
             latest_week_number = week_number
             latest_week_summary = combined_summary
 
-# At this point, you have the summary for the latest week in the variable `latest_week_summary`
-new_main_readme_summary = (f"# Latest Week Summary (Week {latest_week_number}):\n{latest_week_summary}")
+# Generate the budget table
+budget_table = "\n# Budget\n| Subteam | Total | Spendings (This week) | Remaining |\n"
+budget_table += "| --- | --- | --- | --- |\n"
+
+for subteam, total_budget in subteam_budgets.items():
+    # Calculate the remaining budget for each subteam
+    remaining_budget = total_budget - subteam_spendings.get(subteam, 0)
+    
+    # Add the subteam's information to the table
+    budget_table += f"| {subteam} | ${total_budget} | ${subteam_spendings.get(subteam, 0)} | ${remaining_budget} |\n"
+
+# Update the main readme content
+new_main_readme_summary = (f"# Latest Week Summary (Week {latest_week_number}):\n{latest_week_summary}\n")
 
 # Get the existing content of the main readme.md file
 tutorial_file = repo.get_contents("tutorial.md", ref="main")
 tutorial_readme = tutorial_file.decoded_content.decode("utf-8")
 readme_file = repo.get_contents("README.md", ref="main")
+new_readme_content = new_main_readme_summary + budget_table + tutorial_readme
 
-# Combine the existing content and the new summaries
-updated_readme_content = new_main_readme_summary + tutorial_readme
-
-# Update the main readme.md file with the combined summaries
-repo.update_file("README.md", "Update the README with the latest weekly update", updated_readme_content, readme_file.sha, branch="main")
+# Update the main readme.md file with the combined content
+repo.update_file("README.md", "Update the README with the latest weekly update and budget", new_readme_content, readme_file.sha, branch="main")

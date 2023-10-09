@@ -83,7 +83,7 @@ for directory in directories:
             latest_week_number = week_number
             latest_week_summary = combined_summary
             latest_week_costs = week_costs
-
+            
 budget_table = "\n# Budget\n| Subteam | Total | Spendings (This week) | Remaining |\n"
 budget_table += "| --- | --- | --- | --- |\n"
 
@@ -93,7 +93,6 @@ for subteam, total_budget in subteam_budgets.items():
     
     # Add the subteam's information to the table
     budget_table += f"| {subteam} | {total_budget} | {latest_week_costs.get(subteam, 0)} | {remaining_budget} |\n"
-print(budget_table)
 # Update the main readme content
 new_main_readme_summary = (f"# Latest Week Summary (Week {latest_week_number}):\n{latest_week_summary}\n")
 
@@ -104,4 +103,4 @@ readme_file = repo.get_contents("README.md", ref="main")
 new_readme_content = new_main_readme_summary + budget_table + tutorial_readme
 
 # Update the main readme.md file with the combined content
-repo.update_file("README.md", "Update the README with the latest weekly update and budget", new_readme_content, readme_file.sha, branch="main")
+repo.update_file("README.md", "[BOT]Update the README with the latest weekly update and budget", new_readme_content, readme_file.sha, branch="main")

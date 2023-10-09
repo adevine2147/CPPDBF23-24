@@ -10,4 +10,5 @@
 [Meeting Report Format](https://docs.google.com/document/d/1W8hIXivPjW4PSrQ7Es8DGwEqDSCHRhApgGQMQkIKseE/edit?usp=sharing](https://docs.google.com/document/d/1W8hIXivPjW4PSrQ7Es8DGwEqDSCHRhApgGQMQkIKseE/edit?usp=sharing)https://docs.google.com/document/d/1W8hIXivPjW4PSrQ7Es8DGwEqDSCHRhApgGQMQkIKseE/edit?usp=sharing).
 
 ### NOTES
+[Gantt chart for presentation](https://docs.google.com/spreadsheets/d/1s1nZucdv3vNmC6OazVSAW07ZqNjvAlIt95D_1YfaKis/edit?usp=sharing). 
 [Notes](notes_proposal.md)

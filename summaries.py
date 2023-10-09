@@ -32,11 +32,11 @@ latest_week_summary = ""  # Initialize with an empty string
 
 # Initialize a dictionary to store subteam budgets
 subteam_budgets = {
-    "Aerodynamics Team": 2000,
-    "Structures Team (Wed)": 2000,
-    "Structures Team (Fri)": 2000,
-    "Payload Team": 8000,
-    "Systems(Traveling) Team": 2000,
+    "Aerodynamics Team": 800,
+    "Structures Team (Wed)": 2500,
+    "Structures Team (Fri)": 2500,
+    "Payload Team": 1000,
+    "Systems Team": 200,
 }
 
 # Initialize a dictionary to store subteam spendings

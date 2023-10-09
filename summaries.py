@@ -67,7 +67,7 @@ for directory in directories:
                 week_summaries.append(summary_content)
 
             # Extract the spending information if it exists
-            spending_match = re.search(r'Costs: $\s*\$([\d.]+)', content)
+            spending_match = re.search(r'Cost: \$([\d.]+)', content)
             if spending_match:
                 subteam_name = content.split('\n')[0].strip()  # Get the first line which contains the subteam name
                 subteam_spending = float(spending_match.group(1))

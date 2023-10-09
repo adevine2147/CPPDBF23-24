@@ -67,11 +67,11 @@ Finish the Gantt Chart and start updating with Structures for the manufacturing 
 # Budget
 | Subteam | Total | Spendings (This week) | Remaining |
 | --- | --- | --- | --- |
-| Aerodynamics Team | $2000 | $0 | $2000 |
-| Structures Team (Wed) | $2000 | $0 | $2000 |
-| Structures Team (Fri) | $2000 | $0 | $2000 |
-| Payload Team | $8000 | $0 | $8000 |
-| Systems(Traveling) Team | $2000 | $0 | $2000 |
+| Aerodynamics Team | 800 | 0.0 | 800.0 |
+| Structures Team (Wed) | 2500 | 109.46 | 2390.54 |
+| Structures Team (Fri) | 2500 | 85.97 | 2414.03 |
+| Payload Team | 1000 | 0.0 | 1000.0 |
+| Systems Team | 200 | 0.0 | 200.0 |
 
 # CPP DBF 23 - 24
 

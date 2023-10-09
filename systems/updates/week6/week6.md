@@ -1,8 +1,4 @@
-
-
-
-
-Week # 6     Date: 09/30/23    -    10/06/23
+summary: Week # 6     Date: 09/30/23    -    10/06/23
 
 # Aerodynamics Team
 ### Due milestones: 

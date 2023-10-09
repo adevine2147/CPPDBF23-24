@@ -11,4 +11,5 @@
 
 ### NOTES
 [Gantt chart for presentation](https://docs.google.com/spreadsheets/d/1s1nZucdv3vNmC6OazVSAW07ZqNjvAlIt95D_1YfaKis/edit?usp=sharing). 
+
 [Notes](notes_proposal.md)

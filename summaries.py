@@ -55,6 +55,9 @@ for directory in directories:
         # Initialize a list to store summaries for this week
         week_summaries = []
 
+        # Initialize a dictionary to store costs for this week
+        week_costs = {subteam: 0 for subteam in subteam_budgets.keys()}
+
         # Iterate through each markdown file in the subdirectory
         for file in markdown_files:
             content = file.decoded_content.decode("utf-8")
@@ -67,11 +70,10 @@ for directory in directories:
                 week_summaries.append(summary_content)
 
             # Extract the spending information if it exists
-            spending_match = re.search(r'Cost: \$([\d.]+)', content)
-            if spending_match:
-                subteam_name = content.split('\n')[0].strip()  # Get the first line which contains the subteam name
-                subteam_spending = float(spending_match.group(1))
-                subteam_spendings[subteam_name] = subteam_spendings.get(subteam_name, 0) + subteam_spending
+            spending_matches = re.findall(r'Cost: \$([\d.]+)', content)
+            for subteam_name, spending in zip(subteam_budgets.keys(), spending_matches):
+                subteam_spending = float(spending)
+                week_costs[subteam_name] += subteam_spending
 
         # Combine the extracted summaries for this week into a single string
         combined_summary = '\n\n'.join(week_summaries)
@@ -80,18 +82,18 @@ for directory in directories:
         if week_number > latest_week_number:
             latest_week_number = week_number
             latest_week_summary = combined_summary
+            latest_week_costs = week_costs
 
-# Generate the budget table
 budget_table = "\n# Budget\n| Subteam | Total | Spendings (This week) | Remaining |\n"
 budget_table += "| --- | --- | --- | --- |\n"
 
 for subteam, total_budget in subteam_budgets.items():
     # Calculate the remaining budget for each subteam
-    remaining_budget = total_budget - subteam_spendings.get(subteam, 0)
+    remaining_budget = total_budget - latest_week_costs.get(subteam, 0)
     
     # Add the subteam's information to the table
-    budget_table += f"| {subteam} | ${total_budget} | ${subteam_spendings.get(subteam, 0)} | ${remaining_budget} |\n"
-
+    budget_table += f"| {subteam} | {total_budget} | {latest_week_costs.get(subteam, 0)} | {remaining_budget} |\n"
+print(budget_table)
 # Update the main readme content
 new_main_readme_summary = (f"# Latest Week Summary (Week {latest_week_number}):\n{latest_week_summary}\n")
 
@@ -102,4 +104,4 @@ readme_file = repo.get_contents("README.md", ref="main")
 new_readme_content = new_main_readme_summary + budget_table + tutorial_readme
 
 # Update the main readme.md file with the combined content
-repo.update_file("README.md", "Update the README with the latest weekly update and budget", new_readme_content, readme_file.sha, branch="main")
+# repo.update_file("README.md", "Update the README with the latest weekly update and budget", new_readme_content, readme_file.sha, branch="main")

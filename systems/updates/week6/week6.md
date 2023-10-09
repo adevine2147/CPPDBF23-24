@@ -50,23 +50,15 @@ Finish payload bay design by Friday (10/13/2023) with a top, side, and frontal v
 Structures/Manufacturing and Payload are still waiting on Aero for dimensions of the fuselage.
 
 
-
-
-
-
-
-
-
-
-Systems Team
-Due milestones: 
+# Systems Team
+### Due milestones: 
 Finish sections 1.0, 2.0, and 3.0 for the proposal, and start section 4.0.
-Completed milestones: 
+### Completed milestones: 
 Finish section 1.0 and partial of 3.0 for the proposal
 
 
 
-Cost: $0
-Upcoming milestones: 
+### Cost: $0
+### Upcoming milestones: 
 Finish the Gantt Chart and start updating with Structures for the manufacturing plan on proposal 4.0, section 3.0, and Section 2.0 from the PM by October 11th
-Additional Comments:
+***Additional Comments:***

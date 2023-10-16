@@ -1,77 +1,115 @@
-# Latest Week Summary (Week 6):
-Week # 6     Date: 09/30/23    -    10/06/23
+# Latest Week Summary (Week 7):
+Week # 7 Date: 10/07/23 - 10/13/23
+
+  
 
 # Aerodynamics Team
+
 ### Due milestones: 
-Meeting 10/02/2023 Trade matrix updates and progress check-in.
-### Completed milestones: 
-Most components finished 80% completed Airfoil NACA estimated: 64-ish.
-### Cost: $0
-### Upcoming milestones: 
-Complete trade matrix and share to the Structures team and start CAD. 
-***Additional Comments: ***
-Got to contact people who did not make it to the meeting and share updates for the structures team.
-
-# Structures Team (Wed)
-### Due milestones: 
-Learn the program for structures machines for next week's practice for laser and foam cutting.
-### Completed milestones: 
- Had the team gather two airfoils: NACA 0012 & NACA 4412 from the NACA Airfoil Website and convert it into a SVG file to be edited in Inkscape. This allowed it to be compatible with the Hotwire Foam Cutter (HWFC) and allowed for the creation of a hole for the wing spar. 
-It was then exported as a .DXF file into Vector Tracer which allowed it to create the basic command for the airfoil. Then finally exported as a tap file which was the file type that the HWFC (via MACH 4) would read in order to correctly cut out the airfoil. 
-A dry run was first done in order to correctly verify if the HWFC was functioning correctly. The material used for the cutting was a pink insulation foam with 2 in of thickness in order to cut both airfoil shapes with a 2.5 ft span. This was done at 25 PSI.
-### Cost: $109.46 
-(total cost = [$49.98 * 2] + Tax) ( For the Styrofoam used)
-### Upcoming milestones: 
-The Wednesday team will study vacuum bagging techniques, resin safety, and handling safety for laminated materials such as: carbon fiber and fiberglass.
-***Additional Comments: N/A***
-
-
-
-# Structures Team (Fri)
-### Due milestones: 
-Members are looking to go through the Innovation Idea Labs training, analysis of wing geometry, and begin trade studies.
-### Completed milestones: 
-Arrival at the Innovation Idea Labs (IIL) in order to use the Laguna Laser CNC to cut out an 18 in Cord airfoil following the NACA 0012 & 4412 patterns. If there is time, then the team will practice putting Mylar (also known as BoPET) on existing wings in the lab.
-### Cost: $85.97 
-(2'x4'x1/4" plywood sheets 2BC 1Birch)
-### Upcoming milestones: 
-Make 12 in versions of both airfoils, due next Friday. Possibly also preparing for cutting 3.16 in balsa wood.
-***Additional Comments: N/A***
-
-# Payload Team
-### Due milestones: 
-Updates on payload bay design drafts.
+Trade Studies must be done and start XFLR5 practice
 
 ### Completed milestones:
-Team getting familiar with Solidworks and beginning a rough design of the dimensions of the payload bay for Structures/Manufacturing.
-### Cost: $0
-### Upcoming milestones:
-Finish payload bay design by Friday (10/13/2023) with a top, side, and frontal view of payload dimensions. Also begin brainstorming a latching method to access the payload.
-***Additional Comments: ***
-Structures/Manufacturing and Payload are still waiting on Aero for dimensions of the fuselage.
+A presentation was shared by Andrew for XFLR5 usage and some airfoils were practiced. Some trade studies needed an extra week.
 
+
+### Cost: $0
+(Description of cost, don’t put it in the same line as above)
+
+### Upcoming milestones:
+Ansys aircraft simulation will be given to learn and keep XFLR5 practice.
+
+***Additional Comments:***
+
+  
+
+# Structures Team
+ Wednesday 10/11-2023
+
+
+
+
+
+
+### Due milestones:
+Practice Laminate Wings
+
+Step 1) Move outside with materials to a shaded area
+Step 2) Bring two tables
+Step 3) Measure:
+Part to Vacuum
+Vacuum Bag
+Gum tape
+Peel Fly
+Breathing fabric
+Step 4) Cut all materials for part
+Step 5) In a vacuum bag cut a hole approx. ¼ inch make a cross (X)
+
+
+Step 6) Stick the vacuum seal
+Step 7) Put breathing fabric and peel fly inside the vacuum bag
+Step 8) Wear Large gloves and masks cut out carbon fiber to size
+Step 9) Wait for resin
+
+### Completed milestones:
+Finished practicing laminate wings
+ 
+### Cost: $32.29
+(Description of cost, dont put it in the same line as above)
+
+### Upcoming milestones:
+
+***Additional Comments:***
+
+
+
+
+
+
+
+
+
+
+  
+
+# Payload Team
+
+### Due milestones:
+
+### Completed milestones:
+
+### Cost: $0
+(Description of cost, dont put it in the same line as above)
+
+### Upcoming milestones:
+
+***Additional Comments:***
+
+  
 
 # Systems Team
+
 ### Due milestones: 
-Finish sections 1.0, 2.0, and 3.0 for the proposal, and start section 4.0.
+Start working on Section 4.0
+
 ### Completed milestones: 
-Finish section 1.0 and partial of 3.0 for the proposal
-
-
+Section 4.0 waiting for updates for trade studies but the general format already started
 
 ### Cost: $0
+(Description of cost, dont put it in the same line as above)
+
 ### Upcoming milestones: 
-Finish the Gantt Chart and start updating with Structures for the manufacturing plan on proposal 4.0, section 3.0, and Section 2.0 from the PM by October 11th
+Start Gantt Chart for proposal and presentation
+
 ***Additional Comments:***
 
 # Budget
 | Subteam | Total | Spendings (This week) | Remaining |
 | --- | --- | --- | --- |
 | Aerodynamics Team | 800 | 0.0 | 800.0 |
-| Structures Team (Wed) | 2500 | 109.46 | 2390.54 |
-| Structures Team (Fri) | 2500 | 85.97 | 2414.03 |
+| Structures Team (Wed) | 2500 | 32.29 | 2467.71 |
+| Structures Team (Fri) | 2500 | 0.0 | 2500.0 |
 | Payload Team | 1000 | 0.0 | 1000.0 |
-| Systems Team | 200 | 0.0 | 200.0 |
+| Systems Team | 200 | 0 | 200 |
 
 # CPP DBF 23 - 24
 

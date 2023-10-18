@@ -27,6 +27,11 @@ laps = floor(max_air_time/lap_time);
 %passengers weigh 0.085 lbs each, additional 2 lbs
 passenger = 25;
 passengers = (zeros(1,100) + passenger).*scale;
+%additionally, for each passenger we are adding 0.085lbs
+% and for each two passengers, we are adding a length of payload with
+% non-negligible weight. the weight added (based on area) is roughly 3*pi*1.5 in^2 per 2 passengers
+% so for each person we need
+
 
 BASELINE_SCORE = 1 + ...
                  1 + (payload_weight/(3*lap_time))/max2 + ...

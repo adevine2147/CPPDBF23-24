@@ -105,11 +105,11 @@ Start Gantt Chart for proposal and presentation
 # Budget
 | Subteam | Total | Spendings (This week) | Remaining |
 | --- | --- | --- | --- |
-| Aerodynamics Team | 800 | 0.0 | 800.0 |
-| Structures Team (Wed) | 2500 | 32.29 | 2467.71 |
-| Structures Team (Fri) | 2500 | 0.0 | 2500.0 |
-| Payload Team | 1000 | 0.0 | 1000.0 |
-| Systems Team | 200 | 0 | 200 |
+| Aerodynamics Team | 800.0 | 0.0 | 800.0 |
+| Structures Team (Wed) | 2358.25 | 32.29 | 2325.96 |
+| Structures Team (Fri) | 2414.03 | 0.0 | 2414.03 |
+| Payload Team | 1000.0 | 0.0 | 1000.0 |
+| Systems Team | 200.0 | 0 | 200.0 |
 
 # CPP DBF 23 - 24
 

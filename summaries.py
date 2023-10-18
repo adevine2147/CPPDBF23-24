@@ -3,13 +3,13 @@ import re
 from github import Github
 
 repository_name = 'adevine2147/CPPDBF23-24'
+
 # Define the GitHub token secret name
 # Get the GitHub PAT from the environment variable
 github_token = os.getenv("GH_PAT")
 
 # Create a GitHub API client using the token
 g = Github(github_token)
-
 
 # Initialize the GitHub API client with the token
 repo = g.get_repo(repository_name)
@@ -83,6 +83,10 @@ for directory in directories:
             latest_week_number = week_number
             latest_week_summary = combined_summary
             latest_week_costs = week_costs
+
+        # Update subteam budgets for the next week
+        for subteam in subteam_budgets:
+            subteam_budgets[subteam] -= latest_week_costs.get(subteam, 0)
             
 budget_table = "\n# Budget\n| Subteam | Total | Spendings (This week) | Remaining |\n"
 budget_table += "| --- | --- | --- | --- |\n"

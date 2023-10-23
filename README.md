@@ -1,112 +1,52 @@
-# Latest Week Summary (Week 7):
-Week # 7 Date: 10/07/23 - 10/13/23
-
-  
+# Latest Week Summary (Week 8):
+Week # 8     Date: 10/14/23    -    10/20/23
 
 # Aerodynamics Team
 
 ### Due milestones: 
-Trade Studies must be done and start XFLR5 practice
-
+ Practice XFLR5 and finish trade studies.
 ### Completed milestones:
-A presentation was shared by Andrew for XFLR5 usage and some airfoils were practiced. Some trade studies needed an extra week.
-
-
+Practice was done for XFLR5 and all trade studies were finished. Friday's meeting worked together in XFLR5 for the model and discussed trade studies.
 ### Cost: $0
-(Description of cost, don’t put it in the same line as above)
+### Upcoming milestones: 
+### Additional Comments: N/A
 
-### Upcoming milestones:
-Ansys aircraft simulation will be given to learn and keep XFLR5 practice.
-
-***Additional Comments:***
-
-  
 
 # Structures Team
- Wednesday 10/11-2023
+### Due milestones: Assemble and weigh wing for trade study. Finish first practice of wing laminate.
+### Completed milestones: Assemble and weigh wing for trade study and wing laminated.
+### Cost: $0
+### Upcoming milestones: Make a Plan before Aero Data is given.
+### Additional Comments: N/A
 
-
-
-
-
-
-### Due milestones:
-Practice Laminate Wings
-
-Step 1) Move outside with materials to a shaded area
-Step 2) Bring two tables
-Step 3) Measure:
-Part to Vacuum
-Vacuum Bag
-Gum tape
-Peel Fly
-Breathing fabric
-Step 4) Cut all materials for part
-Step 5) In a vacuum bag cut a hole approx. ¼ inch make a cross (X)
-
-
-Step 6) Stick the vacuum seal
-Step 7) Put breathing fabric and peel fly inside the vacuum bag
-Step 8) Wear Large gloves and masks cut out carbon fiber to size
-Step 9) Wait for resin
-
-### Completed milestones:
-Finished practicing laminate wings
- 
-### Cost: $32.29
-(Description of cost, dont put it in the same line as above)
-
-### Upcoming milestones:
-
-***Additional Comments:***
-
-
-
-
-
-
-
-
-
-
-  
 
 # Payload Team
-
-### Due milestones:
-
-### Completed milestones:
-
+### Due milestones: SolidWorks drawing for payload.
+### Completed milestones: The First SolidWorks drawing started and dimension analysis is in progress for each mission. 
 ### Cost: $0
-(Description of cost, dont put it in the same line as above)
+### Upcoming milestones: Mock fuselage dimension shared, keep working on drawing taking into account updated information.
+### Additional Comments: N/A
 
-### Upcoming milestones:
 
-***Additional Comments:***
 
-  
+
+
+
+
+
 
 # Systems Team
-
-### Due milestones: 
-Start working on Section 4.0
-
-### Completed milestones: 
-Section 4.0 waiting for updates for trade studies but the general format already started
-
+### Due milestones: Section 4.0 Framework.
+### Completed milestones: The section 4.0 framework was done, and in Section 3.0 we started studying trade studies done by the Aero Team. Section 2.0 was started and the first draft was finished.
 ### Cost: $0
-(Description of cost, dont put it in the same line as above)
-
-### Upcoming milestones: 
-Start Gantt Chart for proposal and presentation
-
-***Additional Comments:***
+### Upcoming milestones: Correction needed for different sections of the proposal Sections 1.0, 2.0. With help from CE start working on section 3.0.
+### Additional Comments: N/A
 
 # Budget
 | Subteam | Total | Spendings (This week) | Remaining |
 | --- | --- | --- | --- |
 | Aerodynamics Team | 800.0 | 0.0 | 800.0 |
-| Structures Team (Wed) | 2358.25 | 32.29 | 2325.96 |
+| Structures Team (Wed) | 2358.25 | 0.0 | 2358.25 |
 | Structures Team (Fri) | 2414.03 | 0.0 | 2414.03 |
 | Payload Team | 1000.0 | 0.0 | 1000.0 |
 | Systems Team | 200.0 | 0 | 200.0 |

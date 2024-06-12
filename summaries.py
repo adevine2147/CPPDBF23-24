@@ -107,4 +107,4 @@ readme_file = repo.get_contents("README.md", ref="main")
 new_readme_content = new_main_readme_summary + budget_table + tutorial_readme
 
 # Update the main readme.md file with the combined content
-repo.update_file("README.md", "[BOT]Update the README with the latest weekly update and budget", new_readme_content, readme_file.sha, branch="main")
+# repo.update_file("README.md", "[BOT]Update the README with the latest weekly update and budget", new_readme_content, readme_file.sha, branch="main")
